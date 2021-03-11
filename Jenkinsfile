@@ -24,7 +24,7 @@ pipeline {
                             verbose: true,
                             transfers: [
                                 sshTransfer(execCommand: ''' cp /root/tomcat/target/scala-2.13/gitbucket_2.13-4.35.3.war /opt/tomcat/webapps/
-                                    cd /opt/tomcat/bin/
+                                    cd /opt/tomcat/bin/gitbucket.war
 				                    ./shutdown.sh
 				                    ./startup.sh''', sourceFiles: "**/*.war")]
                                 )
