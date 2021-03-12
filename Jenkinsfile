@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'Centos_7_max' }
+    agent { label 'sbt' }
 
     stages {
         stage('First step') {
