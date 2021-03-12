@@ -20,7 +20,7 @@ pipeline {
                     continueOnError: false, failOnError: true,
                     publishers: [
                         sshPublisherDesc(
-                            configName: "Tomcat2",
+                            configName: "Tomcat",
                             verbose: true,
                             transfers: [
                                 sshTransfer(execCommand: ''' cp /root/tomcat/target/scala-2.13/gitbucket_2.13-4.35.3.war /opt/tomcat/webapps/
